@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Pharmacy - Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Online Pharmacy</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+  </nav>
+
+  <div class="container">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" required>
+
+      <p class="error" id="registerError"></p>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>Online Pharmacy &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
