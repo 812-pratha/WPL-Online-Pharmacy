@@ -1,0 +1,172 @@
+body {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  background-color: #eef3f6;
+  color: #2c3e42;
+}
+
+/* Custom muted blue color scheme */
+:root {
+  --muted-blue: #2c6e91;
+  --darker-muted-blue: #1a5570;
+}
+
+/* Keeping custom header styles */
+header {
+  background-color: var(--muted-blue);
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+  font-size: 38px;
+}
+
+/* Hero banner unchanged */
+.hero-banner {
+  width: 100%;
+  height: 350px;
+  background-image: url("images/home-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.hero-overlay h2 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  color: white;
+  font-size: 20px;
+  max-width: 600px;
+}
+
+/* Custom styles for product cards to maintain original look */
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  background-color: #dce6ea;
+}
+
+.product-card h3 {
+  margin: 12px 0 6px 0;
+  font-size: 18px;
+  color: #2c3e42;
+}
+
+.product-card .price {
+  color: var(--muted-blue);
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  background-color: #d6604d;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.buy-btn:hover {
+  background-color: #b74c3c;
+}
+
+/* Custom styles for feature cards to maintain original look */
+.feature-card h3 {
+  margin: 10px 0 5px 0;
+  color: var(--muted-blue);
+  font-size: 17px;
+}
+
+/* Custom styles for step cards to maintain original look */
+.step-card .step-number {
+  background-color: var(--muted-blue);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px auto;
+  font-weight: bold;
+}
+
+/* About section */
+.about-section img {
+  border-radius: 8px;
+  object-fit: cover;
+  height: 220px;
+}
+
+.about-section .about-text {
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: var(--muted-blue);
+  color: white;
+  margin-top: 30px;
+}
+
+/* Override Bootstrap primary colors with our muted blue */
+.btn-primary {
+  background-color: var(--muted-blue) !important;
+  border-color: var(--muted-blue) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--darker-muted-blue) !important;
+  border-color: var(--darker-muted-blue) !important;
+}
+
+.navbar.bg-primary {
+  background-color: var(--muted-blue) !important;
+}
+
+.alert-primary {
+  background-color: #d0e7f0;
+  border-color: #b0d4e3;
+  color: #1a5570;
+}
+
+.page-link {
+  color: var(--muted-blue);
+}
+
+.page-link:hover {
+  color: var(--darker-muted-blue);
+}
+
+.pagination .active .page-link {
+  background-color: var(--muted-blue) !important;
+  border-color: var(--muted-blue) !important;
+}
